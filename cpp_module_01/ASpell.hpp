@@ -4,6 +4,10 @@
 # include <iostream>
 # include <string>
 
+# include "ATarget.hpp"
+
+class ATarget;
+
 class ASpell
 {
 	private:
@@ -23,6 +27,8 @@ class ASpell
 		std::string const	&getEffects(void) const;
 
 		virtual ASpell	*clone(void) const = 0;
+
+		void	launch(ATarget const &target) const;
 };
 
 #endif

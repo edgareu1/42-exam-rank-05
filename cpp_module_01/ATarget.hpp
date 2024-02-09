@@ -4,6 +4,10 @@
 # include <iostream>
 # include <string>
 
+# include "ASpell.hpp"
+
+class ASpell;
+
 class ATarget
 {
 	private:
@@ -21,6 +25,8 @@ class ATarget
 		std::string const	&getType(void) const;
 
 		virtual ATarget	*clone(void) const = 0;
+
+		void	getHitBySpell(ASpell const &spell) const;
 };
 
 #endif
