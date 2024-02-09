@@ -25,13 +25,13 @@ class Warlock
 		SpellBook	_spellBook;
 
 	public:
-		Warlock(std::string const name, std::string const title);
+		Warlock(std::string const &name, std::string const &title);
 		~Warlock(void);
 
 		std::string const	&getName(void) const;
 		std::string const	&getTitle(void) const;
 
-		void	setTitle(std::string const str);
+		void	setTitle(std::string const &str);
 
 		void	introduce(void) const;
 

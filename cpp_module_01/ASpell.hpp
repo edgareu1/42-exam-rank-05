@@ -19,7 +19,7 @@ class ASpell
 		ASpell(ASpell const &obj);
 		ASpell	&operator=(ASpell const &rhs);
 
-		ASpell(std::string const name, std::string const effects);
+		ASpell(std::string const &name, std::string const &effects);
 
 		virtual ~ASpell(void);
 

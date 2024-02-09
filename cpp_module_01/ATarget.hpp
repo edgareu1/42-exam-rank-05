@@ -18,7 +18,7 @@ class ATarget
 		ATarget(ATarget const &obj);
 		ATarget	&operator=(ATarget const &rhs);
 
-		ATarget(std::string const type);
+		ATarget(std::string const &type);
 
 		virtual ~ATarget(void);
 

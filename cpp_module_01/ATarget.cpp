@@ -16,7 +16,7 @@ ATarget	&ATarget::operator=(ATarget const &rhs)
 	return (*this);
 }
 
-ATarget::ATarget(std::string const type): _type(type)
+ATarget::ATarget(std::string const &type): _type(type)
 {
 }
 
