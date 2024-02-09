@@ -3,6 +3,13 @@
 
 # include <iostream>
 # include <string>
+# include <map>
+
+# include "ASpell.hpp"
+# include "ATarget.hpp"
+
+class ASpell;
+class ATarget;
 
 class Warlock
 {
@@ -13,6 +20,7 @@ class Warlock
 
 		std::string	_name;
 		std::string	_title;
+		std::map<std::string, ASpell *>	_spellBook;
 
 	public:
 		Warlock(std::string const name, std::string const title);
@@ -24,6 +32,10 @@ class Warlock
 		void	setTitle(std::string const str);
 
 		void	introduce(void) const;
+
+		void	learnSpell(ASpell *spell);
+		void	forgetSpell(std::string spellName);
+		void	launchSpell(std::string spellName, ATarget const &target);
 };
 
 #endif

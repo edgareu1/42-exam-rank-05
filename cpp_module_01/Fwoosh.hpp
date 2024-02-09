@@ -8,7 +8,7 @@
 
 class ASpell;
 
-class Fwoosh
+class Fwoosh: public ASpell
 {
 	public:
 		Fwoosh(void);
