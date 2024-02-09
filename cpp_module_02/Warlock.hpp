@@ -7,9 +7,11 @@
 
 # include "ASpell.hpp"
 # include "ATarget.hpp"
+# include "SpellBook.hpp"
 
 class ASpell;
 class ATarget;
+class SpellBook;
 
 class Warlock
 {
@@ -20,7 +22,7 @@ class Warlock
 
 		std::string	_name;
 		std::string	_title;
-		std::map<std::string, ASpell *>	_spellBook;
+		SpellBook	_spellBook;
 
 	public:
 		Warlock(std::string const name, std::string const title);
